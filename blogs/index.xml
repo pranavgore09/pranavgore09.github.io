@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/blogs/</link>
+    <description>Recent content in Blogs on Pranav Gore</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 28 Jan 2020 23:53:45 +0530</lastBuildDate>
+    
+	<atom:link href="https://pranavgore09.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First</title>
+      <link>https://pranavgore09.github.io/blogs/first/</link>
+      <pubDate>Tue, 28 Jan 2020 23:53:45 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/first/</guid>
+      <description>Awesome!</description>
+    </item>
+    
+  </channel>
+</rss>

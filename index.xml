@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 28 Jan 2020 23:53:45 +0530</lastBuildDate>
     
 	<atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First</title>
+      <link>https://pranavgore09.github.io/blogs/first/</link>
+      <pubDate>Tue, 28 Jan 2020 23:53:45 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/first/</guid>
+      <description>Awesome!</description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +27,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pranavgore09.github.io/about/</guid>
-      <description>This is not list page Design this page to show profile pic, self details, allow to download resume add paragraphs that you strongly believe in</description>
+      <description>This is not list page Design this page to show profile pic, self details,</description>
     </item>
     
     <item>
@@ -26,7 +36,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pranavgore09.github.io/thinktank/think/</guid>
-      <description>write down whatever you think for this profile builder</description>
+      <description>write down whatever you think for this profile builder
+List of blogs to be written
+ FFmpeg to record audio. Xvfb ? what it is? Basic usage. Headless mode Pulseaudio and virtual devices Xvfb Pulseaudio with FFmpeg to record audio and screen. Selenium simple sweet basic round of test My Guide/Theory Buying Board Games.  Blog structure
+Intro + Picture (logos)
+first para - explain the page in shortest format</description>
     </item>
     
   </channel>
