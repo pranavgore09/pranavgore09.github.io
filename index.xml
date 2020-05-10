@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pranav Gore</title>
-    <link>https://example.com/</link>
+    <link>https://pranavgore09.github.io/</link>
     <description>Recent content on Pranav Gore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://example.com/about/</link>
+      <link>https://pranavgore09.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/about/</guid>
+      <guid>https://pranavgore09.github.io/about/</guid>
       <description>This is not list page Design this page to show profile pic, self details, allow to download resume add paragraphs that you strongly believe in</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/thinktank/think/</link>
+      <link>https://pranavgore09.github.io/thinktank/think/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/thinktank/think/</guid>
+      <guid>https://pranavgore09.github.io/thinktank/think/</guid>
       <description>write down whatever you think for this profile builder</description>
     </item>
     
