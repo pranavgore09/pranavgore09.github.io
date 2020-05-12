@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Record Screen and Audio using FFmpeg on macOS">
+<meta itemprop="description" content="By the end of this blog you will be able to record your screen&#43;audio on macOS.
+Get started by installing FFmpeg with brew. Run following command
+brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
+ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.0.0 (clang-1100.0.33.16) configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay libavutil 56.">
+<meta itemprop="datePublished" content="2020-05-12T09:34:21&#43;05:30" />
+<meta itemprop="dateModified" content="2020-05-12T09:34:21&#43;05:30" />
+<meta itemprop="wordCount" content="535">
+
+
+
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Record Screen and Audio using FFmpeg on macOS" />
+<meta property="og:description" content="By the end of this blog you will be able to record your screen&#43;audio on macOS.
+Get started by installing FFmpeg with brew. Run following command
+brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
+ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.0.0 (clang-1100.0.33.16) configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay libavutil 56." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pranavgore09.github.io/blogs/ffmpeg_mac/" />
+<meta property="article:published_time" content="2020-05-12T09:34:21+05:30" />
+<meta property="article:modified_time" content="2020-05-12T09:34:21+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Record Screen and Audio using FFmpeg on macOS"/>
+<meta name="twitter:description" content="By the end of this blog you will be able to record your screen&#43;audio on macOS.
+Get started by installing FFmpeg with brew. Run following command
+brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
+ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.0.0 (clang-1100.0.33.16) configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay libavutil 56."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Record Screen and Audio using FFmpeg on macOS</title>
+	<link rel="stylesheet" href="https://pranavgore09.github.io/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://pranavgore09.github.io/">Pranav Gore</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://pranavgore09.github.io/blogs/">Blogs</a>
+				<a href="https://pranavgore09.github.io/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://pranavgore09.github.io/blogs/">Blogs</a></li>
+			<li><a href="https://pranavgore09.github.io/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>Record Screen and Audio using FFmpeg on macOS</h1>
+		<div class="content">
+			<p>By the end of this blog you will be able to record your screen+audio on macOS.</p>
+<p>Get started by installing FFmpeg with <a href="https://formulae.brew.sh/formula/ffmpeg">brew</a>. Run following command</p>
+<pre><code>brew install ffmpeg --with-sdl2 --with-ffplay
+(--with-ffplay is optional)
+</code></pre><p>Try running <code>ffmpeg</code>, you should see some output with version number on first line.</p>
+<pre><code>ffmpeg version 4.2.2-tessus  https://evermeet.cx/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
+  built with Apple clang version 11.0.0 (clang-1100.0.33.16)
+  configuration: --cc=/usr/bin/clang --prefix=/opt/ffmpeg --extra-version=tessus --enable-avisynth --enable-fontconfig --enable-gpl --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfreetype --enable-libgsm --enable-libmodplug --enable-libmp3lame --enable-libmysofa --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvmaf --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-version3 --pkg-config-flags=--static --disable-ffplay
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Hyper fast Audio and Video encoder
+usage: ffmpeg [options] [[infile options] -i infile]... {[outfile options] outfile}...
+
+Use -h to get full help or, even better, run 'man ffmpeg'
+</code></pre><p>As of this writing I am using version <code>4.2.2</code></p>
+<hr>
+<p>Let&rsquo;s see which are the AudioVideo devices you have attached to your computer</p>
+<pre><code>ffmpeg -f avfoundation -list_devices true -i &quot;&quot;
+</code></pre><p>you should see some result as following</p>
+<pre><code>.
+.
+[AVFoundation input device @ 0x7f85b1a04500] AVFoundation video devices:
+[AVFoundation input device @ 0x7f85b1a04500] [0] FaceTime HD Camera
+[AVFoundation input device @ 0x7f85b1a04500] [1] Capture screen 0
+[AVFoundation input device @ 0x7f85b1a04500] AVFoundation audio devices:
+[AVFoundation input device @ 0x7f85b1a04500] [0] Built-in Microphone
+</code></pre><p>Note down the device numbers in <code>[]</code>. For me I want to record my screen and my microphone audio hence I will use <code>&quot;1:0&quot;</code> in following command.
+Prepare your combination with syntax <code>&quot;&lt;screen_device_index&gt;:&lt;audio_device_index&gt;&quot;</code></p>
+<p>Now, lets record with most minimum setup</p>
+<pre><code>ffmpeg -y -f avfoundation -i &quot;1:0&quot; output.mkv
+</code></pre><p>Explaination for each parameter</p>
+<p>-y : overwrite output file if exists</p>
+<p>-f : it is one of the <a href="https://ffmpeg.org/ffmpeg.html#toc-Main-options">main options</a> to ffmpeg, it tells which format to use, here <code>avfoundation</code></p>
+<p>-i : Input file. Here, we provide device number&rsquo;s combination that avfoundation will understand and act as input to ffmpeg</p>
+<p>output.mkv : output file to store the recording in <a href="https://www.matroska.org/technical/whatis/index.html">Matroska container</a>.</p>
+<p>Use following to play the recording in your default player</p>
+<pre><code>open output.mkv
+</code></pre><hr>
+<p>In above section, if you do not get proper audio and gets cracking sound or bad audio then checkout <a href="https://stackoverflow.com/questions/35590500/ffmpeg-record-output-audio-for-mac">this link</a></p>
+<p>Just in case that link is not available(for any reason in future), read following section else skip</p>
+<p>Go to your &ldquo;Spotlight Search&rdquo; (press cmd+space) and search for &ldquo;audio midi setup&rdquo;, open it.</p>
+<p>In the microphone settings, click on format dropdown, select &ldquo;bit depth&rdquo; and change it any one of 16 bit value
+(I had to restart once after making this change)</p>
+<p>Now, record again using</p>
+<pre><code>ffmpeg -y -f avfoundation -i &quot;1:0&quot; output.mkv
+</code></pre><p>And verify your recording, hopefully it comes out as expected!</p>
+<p>Conclusion:
+Now, you can go ahead and put it in a <a href="https://www.gnu.org/software/make/manual/make.html">Makefile</a> and then with single command like <code>make record</code> you can start your recording. Very easy to get started with.</p>
+<h4 id="references">Reference(s):<a href="#references" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<ul>
+<li><a href="https://trac.ffmpeg.org/wiki/Capture/Desktop">https://trac.ffmpeg.org/wiki/Capture/Desktop</a></li>
+<li><a href="https://ffmpeg.org/ffmpeg.html">https://ffmpeg.org/ffmpeg.html</a></li>
+</ul>
+<hr>
+<head>
+    <style>
+        .center {
+            font-size: 60px;
+            line-height: 2;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<div class="center">🏆</div>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://pranavgore09.github.io/">Pranav Gore</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://pranavgore09.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://pranavgore09.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
