@@ -7,26 +7,26 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="Prevent accidental git-push in a simple step">
-<meta itemprop="description" content="If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).">
-<meta itemprop="datePublished" content="2018-02-08T14:45:26&#43;05:30" />
-<meta itemprop="dateModified" content="2018-02-08T14:45:26&#43;05:30" />
-<meta itemprop="wordCount" content="319">
+<meta itemprop="name" content="Update golang version on Fedora">
+<meta itemprop="description" content="Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
+Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)">
+<meta itemprop="datePublished" content="2017-10-16T22:40:33&#43;05:30" />
+<meta itemprop="dateModified" content="2017-10-16T22:40:33&#43;05:30" />
+<meta itemprop="wordCount" content="118">
 
 
 
-<meta itemprop="keywords" content="" /><meta property="og:title" content="Prevent accidental git-push in a simple step" />
-<meta property="og:description" content="If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one)." />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Update golang version on Fedora" />
+<meta property="og:description" content="Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
+Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pranavgore09.github.io/blogs/gitpush/" />
-<meta property="article:published_time" content="2018-02-08T14:45:26+05:30" />
-<meta property="article:modified_time" content="2018-02-08T14:45:26+05:30" />
+<meta property="og:url" content="https://pranavgore09.github.io/blogs/golang_update/" />
+<meta property="article:published_time" content="2017-10-16T22:40:33+05:30" />
+<meta property="article:modified_time" content="2017-10-16T22:40:33+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Prevent accidental git-push in a simple step"/>
-<meta name="twitter:description" content="If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one)."/>
+<meta name="twitter:title" content="Update golang version on Fedora"/>
+<meta name="twitter:description" content="Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
+Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -35,7 +35,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>Prevent accidental git-push in a simple step</title>
+	<title>Update golang version on Fedora</title>
 	<link rel="stylesheet" href="https://pranavgore09.github.io/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
 	
 </head>
@@ -69,46 +69,20 @@
 
 
 	<main class="site-main section-inner thin animated fadeIn faster">
-		<h1>Prevent accidental git-push in a simple step</h1>
+		<h1>Update golang version on Fedora</h1>
 		<div class="content">
-			<p>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.</p>
+			<p>Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.</p>
+<p>Now, go to <a href="https://golang.org/dl/">https://golang.org/dl/</a> and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)</p>
+<pre><code>sudo tar -C /usr/local -xzf ~/Downloads/go1.8.4.linux-amd64.tar.gz
+</code></pre><p>And you are done here, just check what go version tells you. (should be the updated version)</p>
 <figure>
-    <img src="/img/for_blogs/freedom.jpeg"/> <figcaption>
-            <h4>Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.</h4>
+    <img src="/img/for_blogs/gopher.jpg"/> <figcaption>
+            <h4>Happy Gopher.</h4>
         </figcaption>
 </figure>
 
-<p>Let’s set the context
-I will call the original repository as upstream
-My fork for that repository will be called as origin
-90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</p>
-<p>Now, you want to setup your git in such a way that you want to prevent accidental push to upstream but you want to fetch from the same</p>
-<p>Let’s add remote first</p>
-<pre><code>$ git remote add upstream git@github.com:fabric8-services/fabric8-wit.git
-</code></pre><p>now let’s check list of remotes</p>
-<pre><code>$ git remote -v
-origin     git@github.com:pranavgore09/fabric8-wit.git (fetch)
-origin     git@github.com:pranavgore09/fabric8-wit.git (push)
-upstream   git@github.com:fabric8-services/fabric8-wit.git (fetch)
-upstream   git@github.com:fabric8-services/fabric8-wit.git (push)
-</code></pre><p>See that, when we add a remote, git configures the URL for push and fetch differently. That helps us in blocking push only.</p>
-<p>now we just want to run following to update URL for pushing to upstream</p>
-<pre><code>$ git remote set-url --push upstream DISABLED
-</code></pre><p>see the change in remote list now</p>
-<pre><code>$ git remote -v
-origin     git@github.com:pranavgore09/fabric8-wit.git (fetch)
-origin     git@github.com:pranavgore09/fabric8-wit.git (push)
-upstream   git@github.com:fabric8-services/fabric8-wit.git (fetch)
-upstream   DISABLED (push)
-</code></pre><p>and when you try to push to upstream it will fail with error saying DISABLED does not appear to be a git repository and that’s how you have just taken care of accidental push to upstream.</p>
-<p>Now its the time you want to push to upstream then just do the following</p>
-<pre><code>$ git remote set-url --push upstream git@github.com:fabric8-services/fabric8-wit.git
-</code></pre><p>Don’t forget to reset push URL after you are done pushing 😉</p>
 <hr>
-<h3 id="more">More?<a href="#more" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<p>You can add a pre-push hook that will execute defined shell script. Read <a href="https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks">git-hooks</a></p>
-<hr>
-<p>Note: This blog is a copy of <a href="https://medium.com/@pranavgore09/prevent-accidental-git-push-in-a-simple-step-55545d7821a5">my own medium blog</a>.</p>
+<p>Note: This blog is a copy of <a href="https://medium.com/@pranavgore09/update-golang-version-on-fedora-da2446240de2">my own medium blog</a>.</p>
 <head>
     <style>
         .center {

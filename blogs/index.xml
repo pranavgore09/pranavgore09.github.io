@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 22 May 2020 14:45:26 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 09:34:21 +0530</lastBuildDate>
     
 	<atom:link href="https://pranavgore09.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Prevent accidental git-push in a simple step</title>
-      <link>https://pranavgore09.github.io/blogs/gitpush/</link>
-      <pubDate>Fri, 22 May 2020 14:45:26 +0530</pubDate>
-      
-      <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
-      <description>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
-    </item>
     
     <item>
       <title>Record Screen and Audio using FFmpeg on macOS</title>
@@ -45,6 +35,37 @@ If you want to emulate the X server and want your UI apps to render over there t
 Let&amp;rsquo;s install it first
 sudo apt update sudo apt install xvfb  Basic Usage:
 Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $! &amp;gt; /tmp/runxvfb.pid With this command we are creating a new display with 1920x1080 resolution and put the PID info /tmp/runxvfb.</description>
+    </item>
+    
+    <item>
+      <title>Exported but Restricted inside `internal` package.</title>
+      <link>https://pranavgore09.github.io/blogs/golang_imported/</link>
+      <pubDate>Wed, 28 Feb 2018 22:50:31 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/golang_imported/</guid>
+      <description>Information about internal package , _ and . imports in Golang!
+  If you come across any package named internal or you write a package with the name internal then it is treated special in Golang world! Only question to ask about it is, Who can import this internal package?
+And the answer is, any file out side the package containing internal package can NOT import internal because the name is self explanatory.</description>
+    </item>
+    
+    <item>
+      <title>Prevent accidental git-push in a simple step</title>
+      <link>https://pranavgore09.github.io/blogs/gitpush/</link>
+      <pubDate>Thu, 08 Feb 2018 14:45:26 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
+      <description>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
+  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
+    </item>
+    
+    <item>
+      <title>Update golang version on Fedora</title>
+      <link>https://pranavgore09.github.io/blogs/golang_update/</link>
+      <pubDate>Mon, 16 Oct 2017 22:40:33 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/golang_update/</guid>
+      <description>Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
+Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)</description>
     </item>
     
   </channel>
