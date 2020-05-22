@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 12 May 2020 09:34:21 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 14:45:26 +0530</lastBuildDate>
     
 	<atom:link href="https://pranavgore09.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prevent accidental git-push in a simple step</title>
+      <link>https://pranavgore09.github.io/blogs/gitpush/</link>
+      <pubDate>Fri, 22 May 2020 14:45:26 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
+      <description>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
+  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
+    </item>
     
     <item>
       <title>Record Screen and Audio using FFmpeg on macOS</title>
