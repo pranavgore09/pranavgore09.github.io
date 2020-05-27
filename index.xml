@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 12 May 2020 09:34:21 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 22:41:00 +0530</lastBuildDate>
     
 	<atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python code translator 2 to 3</title>
+      <link>https://pranavgore09.github.io/blogs/2to3/</link>
+      <pubDate>Wed, 27 May 2020 22:41:00 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
+      <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3, an automated code translator. This is a great tool to convert your python2 project to python3.
+ Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (😍) and a lot more (will cover it some other time).</description>
+    </item>
     
     <item>
       <title>Record Screen and Audio using FFmpeg on macOS</title>
@@ -85,7 +95,7 @@ Now, go to https://golang.org/dl/ and download suitable version for your system.
       <guid>https://pranavgore09.github.io/thinktank/think/</guid>
       <description>write down whatever you think for this profile builder
 List of blogs to be written
- FFmpeg to record screen+audio, video. Xvfb ? what it is? Basic usage. Headless mode Pulseaudio and virtual devices  DONT ADD THIS 4. Xvfb Pulseaudio with FFmpeg to record audio and screen. Selenium simple sweet basic round of test (Join your next googlemeet with automation)  BOARD GAMEs My Guide/Theory Buying Board Games. digital edition, steam, online board gaming Thoughts on Scythe Thoughts on Stone-Age and worker placement games Thoughts on Ticket To Ride Thoughts on Instanbul the board game  Blog structure</description>
+ Pulseaudio and virtual devices  DONT ADD THIS 4. Xvfb Pulseaudio with FFmpeg to record audio and screen. Selenium simple sweet basic round of test (Join your next googlemeet with automation)  BOARD GAMEs My Guide/Theory Buying Board Games. digital edition, steam, online board gaming Thoughts on Scythe Thoughts on Stone-Age and worker placement games Thoughts on Ticket To Ride Thoughts on Instanbul the board game  Blog structure</description>
     </item>
     
   </channel>
