@@ -53,74 +53,31 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Video File Operations with FFmpeg
+<h2>Prevent accidental git-push in a simple step
 </h2>
 </header>
 <section class=entry-content>
-<p>Simple Useful Features of FFmpeg In this section we will go over a beautiful tool called as FFmpeg. I have been using FFmpeg for all of my video editing in server in production for more than 4 years now. It is a very reliable, amazing open source project for playing with video editing.
-Small Tip before we jump in
-Before we dive into these cheat sheet, remember that many of the FFmepg options are applicable to input and output files both....</p>
+<p>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
+Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want. Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one)....</p>
 </section>
-<footer class=entry-footer><span title="2020-09-15 11:30:03 +0000 +0000">September 15, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to Video File Operations with FFmpeg" href=https://pranavgore09.github.io/blogs/ffmpeg_operations/></a>
+<footer class=entry-footer><span title="2018-02-08 14:45:26 +0530 IST">February 8, 2018</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to Prevent accidental git-push in a simple step" href=https://pranavgore09.github.io/blogs/gitpush/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Python code translator 2 to 3
+<h2>Update golang version on Fedora
 </h2>
 </header>
 <section class=entry-content>
-<p>Upgrade today!! Let’s talk about Python 2to3, an automated code translator. This is a great tool to convert your python2 project to python3.
-Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below) Python 2 reached end of life (EOL) on January 1st, 2020 And python3 supports typing (:heart_eyes:) and a lot more (will cover it some other time)....</p>
+<p>Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
+Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)...</p>
 </section>
-<footer class=entry-footer><span title="2020-05-27 22:41:00 +0530 IST">May 27, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to Python code translator 2 to 3" href=https://pranavgore09.github.io/blogs/2to3/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Record Screen and Audio using FFmpeg on macOS
-</h2>
-</header>
-<section class=entry-content>
-<p>By the end of this blog you will be able to record your screen+audio on macOS.
-2 beautiful Open Source softwares Get started by installing FFmpeg with brew. Run following command
-brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
-ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11....</p>
-</section>
-<footer class=entry-footer><span title="2020-05-12 09:34:21 +0530 IST">May 12, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to Record Screen and Audio using FFmpeg on macOS" href=https://pranavgore09.github.io/blogs/ffmpeg_mac/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>X virtual framebuffer (Xvfb)
-</h2>
-</header>
-<section class=entry-content>
-<p>Today, let’s talk about AWESOME X virtual frame buffer.
-Virtual memory to render GUI If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb. Xvfb uses frame buffer to emulate X server.
-Let’s install it first
-sudo apt update sudo apt install xvfb Basic Usage:
-Xvfb :111 -screen 0 1920x1080x24 & echo $!...</p>
-</section>
-<footer class=entry-footer><span title="2020-04-22 23:53:45 +0530 IST">April 22, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to X virtual framebuffer (Xvfb)" href=https://pranavgore09.github.io/blogs/xvfb/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Exported but Restricted inside `internal` package.
-</h2>
-</header>
-<section class=entry-content>
-<p>Information about internal package , _ and . imports in Golang!
-If you come across any package named internal or you write a package with the name internal then it is treated special in Golang world! Only question to ask about it is, Who can import this internal package?
-And the answer is, any file out side the package containing internal package can NOT import internal because the name is self explanatory....</p>
-</section>
-<footer class=entry-footer><span title="2018-02-28 22:50:31 +0530 IST">February 28, 2018</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to Exported but Restricted inside `internal` package." href=https://pranavgore09.github.io/blogs/golang_imported/></a>
+<footer class=entry-footer><span title="2017-10-16 22:40:33 +0530 IST">October 16, 2017</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to Update golang version on Fedora" href=https://pranavgore09.github.io/blogs/golang_update/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=next href=https://pranavgore09.github.io/blogs/page/2/>Next Page »</a>
+<a class=prev href=https://pranavgore09.github.io/blogs/>« Prev Page</a>
 </nav>
 </footer>
 </main>

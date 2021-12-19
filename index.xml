@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pranav Gore</title>
     <link>https://pranavgore09.github.io/</link>
     <description>Recent content on Pranav Gore</description>
+    <image>
+      <url>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 27 May 2020 22:41:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video File Operations with FFmpeg</title>
+      <link>https://pranavgore09.github.io/blogs/ffmpeg_operations/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/ffmpeg_operations/</guid>
+      <description>Simple Useful Features of FFmpeg   In this section we will go over a beautiful tool called as FFmpeg. I have been using FFmpeg for all of my video editing in server in production for more than 4 years now. It is a very reliable, amazing open source project for playing with video editing.
+Small Tip before we jump in
+Before we dive into these cheat sheet, remember that many of the FFmepg options are applicable to input and output files both.</description>
+    </item>
     
     <item>
       <title>Python code translator 2 to 3</title>
@@ -19,7 +28,7 @@
       
       <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
       <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3, an automated code translator. This is a great tool to convert your python2 project to python3.
- Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (😍) and a lot more (will cover it some other time).</description>
+ Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (:heart_eyes:) and a lot more (will cover it some other time).</description>
     </item>
     
     <item>

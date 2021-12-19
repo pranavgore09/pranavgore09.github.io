@@ -1,62 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://pranavgore09.github.io/blogs/</loc>
-    <lastmod>2020-05-27T22:41:00+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+  </url><url>
     <loc>https://pranavgore09.github.io/</loc>
-    <lastmod>2020-05-27T22:41:00+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://pranavgore09.github.io/blogs/ffmpeg_operations/</loc>
+    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/2to3/</loc>
     <lastmod>2020-05-27T22:41:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/ffmpeg_mac/</loc>
     <lastmod>2020-05-12T09:34:21+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/xvfb/</loc>
     <lastmod>2020-04-22T23:53:45+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/golang_imported/</loc>
     <lastmod>2018-02-28T22:50:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/gitpush/</loc>
     <lastmod>2018-02-08T14:45:26+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/blogs/golang_update/</loc>
     <lastmod>2017-10-16T22:40:33+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/about/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/thinktank/think/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://pranavgore09.github.io/categories/</loc>
+  </url><url>
     <loc>https://pranavgore09.github.io/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pranavgore09.github.io/thinktank/</loc>
   </url>
-  
 </urlset>
