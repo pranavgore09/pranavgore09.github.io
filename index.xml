@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pranav Gore</title>
     <link>https://pranavgore09.github.io/</link>
     <description>Recent content on Pranav Gore</description>
-    <image>
-      <url>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Video File Operations with FFmpeg</title>
-      <link>https://pranavgore09.github.io/blogs/ffmpeg_operations/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://pranavgore09.github.io/blogs/ffmpeg_operations/</guid>
-      <description>Simple Useful Features of FFmpeg   In this section we will go over a beautiful tool called as FFmpeg. I have been using FFmpeg for all of my video editing in server in production for more than 4 years now. It is a very reliable, amazing open source project for playing with video editing.
-Small Tip before we jump in
-Before we dive into these cheat sheet, remember that many of the FFmepg options are applicable to input and output files both.</description>
-    </item>
-    
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 27 May 2020 22:41:00 +0530</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python code translator 2 to 3</title>
       <link>https://pranavgore09.github.io/blogs/2to3/</link>
@@ -28,7 +15,7 @@ Before we dive into these cheat sheet, remember that many of the FFmepg options 
       
       <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
       <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3, an automated code translator. This is a great tool to convert your python2 project to python3.
- Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (:heart_eyes:) and a lot more (will cover it some other time).</description>
+ Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)  Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (😍) and a lot more (will cover it some other time).</description>
     </item>
     
     <item>
@@ -38,7 +25,7 @@ Before we dive into these cheat sheet, remember that many of the FFmepg options 
       
       <guid>https://pranavgore09.github.io/blogs/ffmpeg_mac/</guid>
       <description>By the end of this blog you will be able to record your screen+audio on macOS.
-  2 beautiful Open Source softwares    Get started by installing FFmpeg with brew. Run following command
+ 2 beautiful Open Source softwares    Get started by installing FFmpeg with brew. Run following command
 brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
 ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.</description>
     </item>
@@ -50,10 +37,10 @@ ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 
       
       <guid>https://pranavgore09.github.io/blogs/xvfb/</guid>
       <description>Today, let&amp;rsquo;s talk about AWESOME X virtual frame buffer.
-  Virtual memory to render GUI    If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb. Xvfb uses frame buffer to emulate X server.
+ Virtual memory to render GUI    If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb. Xvfb uses frame buffer to emulate X server.
 Let&amp;rsquo;s install it first
 sudo apt update sudo apt install xvfb  Basic Usage:
-Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $!</description>
+Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $! &amp;gt; /tmp/runxvfb.</description>
     </item>
     
     <item>
@@ -63,7 +50,7 @@ Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $!</description>
       
       <guid>https://pranavgore09.github.io/blogs/golang_imported/</guid>
       <description>Information about internal package , _ and . imports in Golang!
-  If you come across any package named internal or you write a package with the name internal then it is treated special in Golang world! Only question to ask about it is, Who can import this internal package?
+ If you come across any package named internal or you write a package with the name internal then it is treated special in Golang world! Only question to ask about it is, Who can import this internal package?
 And the answer is, any file out side the package containing internal package can NOT import internal because the name is self explanatory.</description>
     </item>
     
@@ -74,7 +61,7 @@ And the answer is, any file out side the package containing internal package can
       
       <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
       <description>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
+ Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
     </item>
     
     <item>
