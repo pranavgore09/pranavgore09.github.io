@@ -27,7 +27,7 @@ Before we dive into these cheat sheet, remember that many of the FFmepg options 
       <pubDate>Wed, 27 May 2020 22:41:00 +0530</pubDate>
       
       <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
-      <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3, an automated code translator. This is a great tool to convert your python2 project to python3.
+      <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3 , an automated code translator. This is a great tool to convert your python2 project to python3.
  Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (:heart_eyes:) and a lot more (will cover it some other time).</description>
     </item>
     
@@ -38,7 +38,7 @@ Before we dive into these cheat sheet, remember that many of the FFmepg options 
       
       <guid>https://pranavgore09.github.io/blogs/ffmpeg_mac/</guid>
       <description>By the end of this blog you will be able to record your screen+audio on macOS.
-  2 beautiful Open Source softwares    Get started by installing FFmpeg with brew. Run following command
+  2 beautiful Open Source softwares    Get started by installing FFmpeg with brew . Run following command
 brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
 ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.</description>
     </item>
@@ -50,7 +50,7 @@ ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 
       
       <guid>https://pranavgore09.github.io/blogs/xvfb/</guid>
       <description>Today, let&amp;rsquo;s talk about AWESOME X virtual frame buffer.
-  Virtual memory to render GUI    If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb. Xvfb uses frame buffer to emulate X server.
+  Virtual memory to render GUI    If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb . Xvfb uses frame buffer to emulate X server.
 Let&amp;rsquo;s install it first
 sudo apt update sudo apt install xvfb  Basic Usage:
 Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $!</description>
@@ -93,10 +93,11 @@ Now, go to https://golang.org/dl/ and download suitable version for your system.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pranavgore09.github.io/about/</guid>
-      <description>More than just a software developer.
-Learn, Understand, Brainstorm, Train, Develop, Maintain, Repeat.
+      <description>Python, Django+DRF, Javascript, Redis, PostgreSQL, FFMpeg, Video processing (FFmpeg), HLS, AWS, IaC (Terraform and cloudformation), CI/CD (Github Actions and Jenkins). Hands on experince with all mentioned 😊.
+Resume More than just a software developer.
+Learn, Understand, Brainstorm, Train, Develop, Maintain, Run10k, Repeat.
 I have used above pattern in my 10 years of software journey and it helped me extraordinarily.
-I have hands-on experience of software products going down and up. I have worked in start ups with less than 10 head count. I enjoy building real world and easy to use products. To solve one issue you need to find answers to multiple smaller issues and that is where I learn and grow.</description>
+I have hands-on experience of software products going down and up. I have worked in start ups with less than 10 head count and enjoyed building real world and easy to use products.</description>
     </item>
     
     <item>
@@ -105,7 +106,8 @@ I have hands-on experience of software products going down and up. I have worked
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pranavgore09.github.io/contact/</guid>
-      <description>Please write to me at pranavgore09@gmail.com</description>
+      <description>Please write to me at pranavgore09@gmail.com .
+Resume </description>
     </item>
     
     <item>
