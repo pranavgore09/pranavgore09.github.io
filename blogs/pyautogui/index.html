@@ -1,0 +1,165 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>When & why to use PyAutoGUI | Pranav Gore</title>
+<meta name=keywords content>
+<meta name=description content="PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.
+Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.">
+<meta name=author content>
+<link rel=canonical href=https://pranavgore09.github.io/blogs/pyautogui/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=16x16 href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=mask-icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.90.1">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="When & why to use PyAutoGUI">
+<meta property="og:description" content="PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.
+Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pranavgore09.github.io/blogs/pyautogui/"><meta property="og:image" content="https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="blogs">
+<meta property="article:published_time" content="2022-05-02T06:26:33+05:30">
+<meta property="article:modified_time" content="2022-05-02T06:26:33+05:30"><meta property="og:site_name" content="Pranav Gore">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="When & why to use PyAutoGUI">
+<meta name=twitter:description content="PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.
+Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blogs","item":"https://pranavgore09.github.io/blogs/"},{"@type":"ListItem","position":2,"name":"When \u0026 why to use PyAutoGUI","item":"https://pranavgore09.github.io/blogs/pyautogui/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"When \u0026 why to use PyAutoGUI","name":"When \u0026 why to use PyAutoGUI","description":"PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.\nSelenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.","keywords":[],"articleBody":"  PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.\nSelenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.\nWe are going to see how we can use PyAutoGUI to build automation script.\nInstallation and Documentation Links PyAutoGUI Github Repo PyAutoGui ReadTheDocs Examples If you want to drag the mouse cursor to a button and click on it then you can use following snippet. import pyautogui def move_and_click(x,y): # x,y are co=ordinates to move\u0026click pyautogui.moveTo(x, y) pyautogui.click(x, y) Gradually move the mouse cursor and make it look like non-automated :D import pyautogui # Takes 3 seconds to perform move action pyautogui.moveTo(x, y, 3) If you want to perform double click action on any point. import pyautogui def double_click(x,y): pyautogui.click(clicks=2, x, y) If you want to write in a text field. import pyautogui def write_at_location(x, y, text=\"HelloWorld\"): pyautogui.moveTo(x, y) pyautogui.typewrite(text) Fun part, using image recognition Take a screenshot import pyautogui def screenshot(local_path): img = pyautogui.screenshot() return img.save(local_path) When you can not have X,Y co-ordinates of a button then you need to use image recognition to find that image on screen first and then get its X,Y. Now, use above screenshot and just crop some area that you want to click on (lets call it a button). import pyautogui def locate_image(image_file): location = pyautogui.locateOnScreen(image_file) if location: print(f'x= {location[0]}, y={location[1]}') else: print(\"not_found\") Also, you can directly get the center of the button import pyautogui def locate_image(image_file): location = pyautogui.locateCenterOnScreen(image_file) if location: x,y = location[0], location[1] pyautogui.moveTo(x, y, 2) pyautogui.click(x, y) else: print(\"not_found\") Get resolution of the display import pyautogui size_x, size_y = pyautogui.size() print(f'Screen Resolution={size_x}x{size_x}') At the core we are going to rely on, image recognition. PyAutoGUI uses Pillow under the hood for image recognition. You can adjust confidence score while it matches the images. Read more at this source import pyautogui def locate_image(image_file, confidence=0.999): return pyautogui.locateOnScreen(image_file, confidence=confidence)   .center { font-size: 60px; line-height: 2; vertical-align: middle; text-align: center; }   🏆 ","wordCount":"370","inLanguage":"en","datePublished":"2022-05-02T06:26:33+05:30","dateModified":"2022-05-02T06:26:33+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://pranavgore09.github.io/blogs/pyautogui/"},"publisher":{"@type":"Organization","name":"Pranav Gore","logo":{"@type":"ImageObject","url":"https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+</head>
+<body class=dark id=top>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://pranavgore09.github.io/ accesskey=h title="Pranav Gore (Alt + H)">Pranav Gore</a>
+<span class=logo-switches>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://pranavgore09.github.io/about/ title=about>
+<span>about</span>
+</a>
+</li>
+<li>
+<a href=https://pranavgore09.github.io/contact/ title=contact>
+<span>contact</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://pranavgore09.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://pranavgore09.github.io/blogs/>Blogs</a></div>
+<h1 class=post-title>
+When & why to use PyAutoGUI
+</h1>
+<div class=post-meta><span title="2022-05-02 06:26:33 +0530 IST">May 2, 2022</span>
+</div>
+</header>
+<div class=post-content><figure>
+<img loading=lazy src=/img/for_blogs/pyautogui.png>
+</figure>
+<p>PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.</p>
+<p>Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.</p>
+<p>We are going to see how we can use PyAutoGUI to build automation script.</p>
+<h3 id=installation-and-documentation-links>Installation and Documentation Links<a hidden class=anchor aria-hidden=true href=#installation-and-documentation-links>#</a></h3>
+<p><a href=https://github.com/asweigart/pyautogui>PyAutoGUI Github Repo</a>
+</p>
+<p><a href=https://pyautogui.readthedocs.io/en/latest/>PyAutoGui ReadTheDocs</a>
+</p>
+<h3 id=examples>Examples<a hidden class=anchor aria-hidden=true href=#examples>#</a></h3>
+<h4 id=if-you-want-to-drag-the-mouse-cursor-to-a-button-and-click-on-it-then-you-can-use-following-snippet>If you want to drag the mouse cursor to a button and click on it then you can use following snippet.<a hidden class=anchor aria-hidden=true href=#if-you-want-to-drag-the-mouse-cursor-to-a-button-and-click-on-it-then-you-can-use-following-snippet>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def move_and_click(x,y):
+    # x,y are co=ordinates to move&amp;click
+    pyautogui.moveTo(x, y)
+    pyautogui.click(x, y)
+</code></pre><h4 id=gradually-move-the-mouse-cursor-and-make-it-look-like-non-automated-d>Gradually move the mouse cursor and make it look like non-automated :D<a hidden class=anchor aria-hidden=true href=#gradually-move-the-mouse-cursor-and-make-it-look-like-non-automated-d>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+# Takes 3 seconds to perform move action
+pyautogui.moveTo(x, y, 3)
+</code></pre><h4 id=if-you-want-to-perform-double-click-action-on-any-point>If you want to perform double click action on any point.<a hidden class=anchor aria-hidden=true href=#if-you-want-to-perform-double-click-action-on-any-point>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def double_click(x,y):
+    pyautogui.click(clicks=2, x, y)
+</code></pre><h4 id=if-you-want-to-write-in-a-text-field>If you want to write in a text field.<a hidden class=anchor aria-hidden=true href=#if-you-want-to-write-in-a-text-field>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def write_at_location(x, y, text=&quot;HelloWorld&quot;):
+    pyautogui.moveTo(x, y)
+    pyautogui.typewrite(text)
+</code></pre><h3 id=fun-part-using-image-recognition>Fun part, using image recognition<a hidden class=anchor aria-hidden=true href=#fun-part-using-image-recognition>#</a></h3>
+<h4 id=take-a-screenshot>Take a screenshot<a hidden class=anchor aria-hidden=true href=#take-a-screenshot>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def screenshot(local_path):
+    img = pyautogui.screenshot()
+    return img.save(local_path)
+</code></pre><h4 id=when-you-can-not-have-xy-co-ordinates-of-a-button-then-you-need-to-use-image-recognition-to-find-that-image-on-screen-first-and-then-get-its-xy-now-use-above-screenshot-and-just-crop-some-area-that-you-want-to-click-on-lets-call-it-a-button>When you can not have X,Y co-ordinates of a button then you need to use image recognition to find that image on screen first and then get its X,Y. Now, use above screenshot and just crop some area that you want to click on (lets call it a button).<a hidden class=anchor aria-hidden=true href=#when-you-can-not-have-xy-co-ordinates-of-a-button-then-you-need-to-use-image-recognition-to-find-that-image-on-screen-first-and-then-get-its-xy-now-use-above-screenshot-and-just-crop-some-area-that-you-want-to-click-on-lets-call-it-a-button>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def locate_image(image_file):
+    location = pyautogui.locateOnScreen(image_file)
+    if location:
+        print(f'x= {location[0]}, y={location[1]}')
+    else:
+        print(&quot;not_found&quot;)
+</code></pre><h4 id=also-you-can-directly-get-the-center-of-the-button>Also, you can directly get the center of the button<a hidden class=anchor aria-hidden=true href=#also-you-can-directly-get-the-center-of-the-button>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+def locate_image(image_file):
+    location = pyautogui.locateCenterOnScreen(image_file)
+    if location:
+        x,y = location[0], location[1]
+        pyautogui.moveTo(x, y, 2)
+        pyautogui.click(x, y)
+    else:
+        print(&quot;not_found&quot;)
+</code></pre><h4 id=get-resolution-of-the-display>Get resolution of the display<a hidden class=anchor aria-hidden=true href=#get-resolution-of-the-display>#</a></h4>
+<pre tabindex=0><code>import pyautogui
+size_x, size_y = pyautogui.size()
+print(f'Screen Resolution={size_x}x{size_x}')
+</code></pre><h4 id=at-the-core-we-are-going-to-rely-on-image-recognition-pyautogui-uses-pillow-under-the-hood-for-image-recognition-you-can-adjust-confidence-score-while-it-matches-the-images>At the core we are going to rely on, image recognition. PyAutoGUI uses Pillow under the hood for image recognition. You can adjust confidence score while it matches the images.<a hidden class=anchor aria-hidden=true href=#at-the-core-we-are-going-to-rely-on-image-recognition-pyautogui-uses-pillow-under-the-hood-for-image-recognition-you-can-adjust-confidence-score-while-it-matches-the-images>#</a></h4>
+<p>Read more at <a href=https://github.com/asweigart/pyscreeze/blob/0446e87235e0079f591f0c49ece7d487dedc2f9a/pyscreeze/__init__.py#L180>this source</a>
+</p>
+<pre tabindex=0><code>import pyautogui
+def locate_image(image_file, confidence=0.999):
+    return pyautogui.locateOnScreen(image_file, confidence=confidence)
+</code></pre><head>
+<style>.center{font-size:60px;line-height:2;vertical-align:middle;text-align:center}</style>
+</head>
+<div class=center>🏆</div>
+</div>
+<footer class=post-footer>
+<nav class=paginav>
+<a class=next href=https://pranavgore09.github.io/blogs/ffmpeg_operations/>
+<span class=title>Next Page »</span>
+<br>
+<span>Video File Operations with FFmpeg</span>
+</a>
+</nav>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2022 <a href=https://pranavgore09.github.io/>Pranav Gore</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+</body>
+</html>

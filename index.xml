@@ -9,7 +9,17 @@
       <link>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 06:26:33 +0530</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When &amp; why to use PyAutoGUI</title>
+      <link>https://pranavgore09.github.io/blogs/pyautogui/</link>
+      <pubDate>Mon, 02 May 2022 06:26:33 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/pyautogui/</guid>
+      <description>PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.
+Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.</description>
+    </item>
+    
     <item>
       <title>Video File Operations with FFmpeg</title>
       <link>https://pranavgore09.github.io/blogs/ffmpeg_operations/</link>
