@@ -9,7 +9,17 @@
       <link>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 May 2022 06:26:33 +0530</lastBuildDate><atom:link href="https://pranavgore09.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 15:24:16 +0530</lastBuildDate><atom:link href="https://pranavgore09.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing custom VSCode plugin</title>
+      <link>https://pranavgore09.github.io/blogs/vscode_plugin/</link>
+      <pubDate>Fri, 20 May 2022 15:24:16 +0530</pubDate>
+      
+      <guid>https://pranavgore09.github.io/blogs/vscode_plugin/</guid>
+      <description>I enjoy writing code snippets that eventually works out as a utility to a developer.
+ The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.</description>
+    </item>
+    
     <item>
       <title>When &amp; why to use PyAutoGUI</title>
       <link>https://pranavgore09.github.io/blogs/pyautogui/</link>

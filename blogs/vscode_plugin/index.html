@@ -1,0 +1,138 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Writing custom VSCode plugin | Pranav Gore</title>
+<meta name=keywords content>
+<meta name=description content="I enjoy writing code snippets that eventually works out as a utility to a developer.
+ The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.">
+<meta name=author content>
+<link rel=canonical href=https://pranavgore09.github.io/blogs/vscode_plugin/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=16x16 href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<link rel=mask-icon href=https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.90.1">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="Writing custom VSCode plugin">
+<meta property="og:description" content="I enjoy writing code snippets that eventually works out as a utility to a developer.
+ The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pranavgore09.github.io/blogs/vscode_plugin/"><meta property="og:image" content="https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="blogs">
+<meta property="article:published_time" content="2022-05-20T15:24:16+05:30">
+<meta property="article:modified_time" content="2022-05-20T15:24:16+05:30"><meta property="og:site_name" content="Pranav Gore">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="Writing custom VSCode plugin">
+<meta name=twitter:description content="I enjoy writing code snippets that eventually works out as a utility to a developer.
+ The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blogs","item":"https://pranavgore09.github.io/blogs/"},{"@type":"ListItem","position":2,"name":"Writing custom VSCode plugin","item":"https://pranavgore09.github.io/blogs/vscode_plugin/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Writing custom VSCode plugin","name":"Writing custom VSCode plugin","description":"I enjoy writing code snippets that eventually works out as a utility to a developer.\n The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.","keywords":[],"articleBody":"I enjoy writing code snippets that eventually works out as a utility to a developer.\n The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.\nHere, I am going to talk about a VSCode plugin that I published.\nMarket place Link: Link Opener Github Repository Link: Link Opener Why? In recent years I have seen that comments in the code has more and more links to outside resources. Be it a link to google drive where you have store company’s strategy to release this feature or be it a stackoverflow link based on which relative code is written. When I want to open such links I was clicking on each of them one by one while holding ctrl. After a while it became tedious 😀.\nMy use was not just from documentation, but particularly opening a lot of Django Admin pages for which I had generated URLs via other tools. Bunch of URLs is the input which I will paste in a new page and trigger command to open all these links.\nHow to build custom plugin? This is the document that helped me understand the architecture of plugin development and testing.\nI went through this great tutorial on youtube at 1.5x speed, I followed the publishing steps from the video while I was writing my own code for the plugin. Shoutout to WebDevSimplified channel.\nAnd I designed a logo as well!! (By trying to follow this tutorial)\nHow? If current document has valid links in it then, with a single command you can open all the links at a time in different tabs. Firefox supports opening multiple tabs in parallel from command line. When Firefox is not installed on system it will open just first link in system’s default browser.\nResources  Official documentation on custom plugins https://code.visualstudio.com/api/get-started/your-first-extension  Youtube tutorial on writing+publishing custom plugins https://www.youtube.com/watch?v=q5V4T3o3CXE  Youtube tutorial to design a logo in GIMP https://www.youtube.com/watch?v=qCaTXvJE4X8     .center { font-size: 60px; line-height: 2; vertical-align: middle; text-align: center; }   🏆 ","wordCount":"369","inLanguage":"en","datePublished":"2022-05-20T15:24:16+05:30","dateModified":"2022-05-20T15:24:16+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://pranavgore09.github.io/blogs/vscode_plugin/"},"publisher":{"@type":"Organization","name":"Pranav Gore","logo":{"@type":"ImageObject","url":"https://pranavgore09.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+</head>
+<body class=dark id=top>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://pranavgore09.github.io/ accesskey=h title="Pranav Gore (Alt + H)">Pranav Gore</a>
+<span class=logo-switches>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://pranavgore09.github.io/about/ title=about>
+<span>about</span>
+</a>
+</li>
+<li>
+<a href=https://pranavgore09.github.io/contact/ title=contact>
+<span>contact</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://pranavgore09.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://pranavgore09.github.io/blogs/>Blogs</a></div>
+<h1 class=post-title>
+Writing custom VSCode plugin
+</h1>
+<div class=post-meta><span title="2022-05-20 15:24:16 +0530 IST">May 20, 2022</span>
+</div>
+</header>
+<div class=post-content><p>I enjoy writing code snippets that eventually works out as a utility to a developer.</p>
+<figure class=center>
+<img loading=lazy src=/img/for_blogs/tools.jpg width=800 height=500> <figcaption>
+The DevTools!
+</figcaption>
+</figure>
+<p>Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects.
+Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better.
+But about that in some other blog.</p>
+<p>Here, I am going to talk about a VSCode plugin that I published.</p>
+<p>Market place Link: <a href="https://marketplace.visualstudio.com/items?itemName=pgvscodeextentionpublisher.link-opener" target=_blank>Link Opener</a>
+</p>
+<p>Github Repository Link: <a href=https://github.com/pranavgore09/link-opener target=_blank>Link Opener</a>
+</p>
+<h3 id=why>Why?<a hidden class=anchor aria-hidden=true href=#why>#</a></h3>
+<p>In recent years I have seen that comments in the code has more and more links to outside resources. Be it a link to google drive where you have store company&rsquo;s strategy to release this feature or be it a stackoverflow link based on which relative code is written.
+When I want to open such links I was clicking on each of them one by one while holding ctrl. After a while it became tedious 😀.</p>
+<p>My use was not just from documentation, but particularly opening a lot of Django Admin pages for which I had generated URLs via other tools. Bunch of URLs is the input which I will paste in a new page and trigger command to open all these links.</p>
+<h3 id=how-to-build-custom-plugin>How to build custom plugin?<a hidden class=anchor aria-hidden=true href=#how-to-build-custom-plugin>#</a></h3>
+<p><a href=https://code.visualstudio.com/api/get-started/your-first-extension target=_blank>This is</a>
+the document that helped me understand the architecture of plugin development and testing.</p>
+<p>I went through <a href="https://www.youtube.com/watch?v=q5V4T3o3CXE" target=_blank>this great tutorial on youtube</a>
+at 1.5x speed, I followed the publishing steps from the video while I was writing my own code for the plugin. Shoutout to <a href=https://www.youtube.com/c/WebDevSimplified target=_blank>WebDevSimplified</a>
+channel.</p>
+<p>And I designed a logo as well!! (By trying to follow <a href="https://www.youtube.com/watch?v=qCaTXvJE4X8" target=_blank>this</a>
+tutorial)</p>
+<h3 id=how>How?<a hidden class=anchor aria-hidden=true href=#how>#</a></h3>
+<p>If current document has valid links in it then, with a single command you can open all the links at a time in different tabs.
+Firefox supports opening multiple tabs in parallel from command line. When Firefox is not installed on system it will open just first link in system&rsquo;s default browser.</p>
+<h3 id=resources>Resources<a hidden class=anchor aria-hidden=true href=#resources>#</a></h3>
+<ul>
+<li>Official documentation on custom plugins <a href=https://code.visualstudio.com/api/get-started/your-first-extension target=_blank>https://code.visualstudio.com/api/get-started/your-first-extension</a>
+</li>
+<li>Youtube tutorial on writing+publishing custom plugins <a href="https://www.youtube.com/watch?v=q5V4T3o3CXE" target=_blank>https://www.youtube.com/watch?v=q5V4T3o3CXE</a>
+</li>
+<li>Youtube tutorial to design a logo in GIMP <a href="https://www.youtube.com/watch?v=qCaTXvJE4X8" target=_blank>https://www.youtube.com/watch?v=qCaTXvJE4X8</a>
+</li>
+</ul>
+<head>
+<style>.center{font-size:60px;line-height:2;vertical-align:middle;text-align:center}</style>
+</head>
+<div class=center>🏆</div>
+</div>
+<footer class=post-footer>
+<nav class=paginav>
+<a class=next href=https://pranavgore09.github.io/blogs/pyautogui/>
+<span class=title>Next Page »</span>
+<br>
+<span>When & why to use PyAutoGUI</span>
+</a>
+</nav>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2022 <a href=https://pranavgore09.github.io/>Pranav Gore</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+</body>
+</html>
