@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ffmpeg on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/ffmpeg/</link>
+    <description>Recent content in Ffmpeg on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video File Operations with FFmpeg</title>
+      <link>https://pranavgore09.github.io/blogs/ffmpeg_operations/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/ffmpeg_operations/</guid>
+      <description>Common FFmpeg video processing operations: trimming, merging, format conversion, resolution scaling, and extracting audio from video files.</description>
+    </item>
+    <item>
+      <title>Record Screen and Audio using FFmpeg on macOS</title>
+      <link>https://pranavgore09.github.io/blogs/ffmpeg_mac/</link>
+      <pubDate>Tue, 12 May 2020 09:34:21 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/ffmpeg_mac/</guid>
+      <description>Step-by-step guide to recording your screen and system audio on macOS using FFmpeg from the command line — no third-party software required.</description>
+    </item>
+  </channel>
+</rss>

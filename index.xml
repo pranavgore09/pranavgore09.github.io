@@ -5,141 +5,114 @@
     <link>https://pranavgore09.github.io/</link>
     <description>Recent content on Pranav Gore</description>
     <image>
-      <url>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://pranavgore09.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 May 2022 15:24:16 +0530</lastBuildDate><atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 May 2022 15:24:16 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing custom VSCode plugin</title>
       <link>https://pranavgore09.github.io/blogs/vscode_plugin/</link>
       <pubDate>Fri, 20 May 2022 15:24:16 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/vscode_plugin/</guid>
-      <description>I enjoy writing code snippets that eventually works out as a utility to a developer.
- The DevTools!   Developer tools are small independent code pieces those can be executed on-demand and should not have any side effects. Recently I have been using Django Admin intensively to add more and more options in list view, detail view to help debugging and developing better. But about that in some other blog.</description>
+      <description>A practical walkthrough of building a custom Visual Studio Code extension — from scaffolding to shipping a working developer utility.</description>
     </item>
-    
     <item>
       <title>When &amp; why to use PyAutoGUI</title>
       <link>https://pranavgore09.github.io/blogs/pyautogui/</link>
       <pubDate>Mon, 02 May 2022 06:26:33 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/pyautogui/</guid>
-      <description>PyAutoGUI is one of the framework you can use to test desktop applications. Consider a case where you need to test a flow of the application and it is not in browser, you can go for PyAutoGUI.
-Selenium is another framework that comes to the mind when we talk about any type of testing automation but it only supports browser based automation. Selenium can not have control over locally running non-browser app.</description>
+      <description>When PyAutoGUI is the right tool for desktop GUI automation and testing — practical use cases, limitations, and a getting-started walkthrough.</description>
     </item>
-    
     <item>
       <title>Video File Operations with FFmpeg</title>
       <link>https://pranavgore09.github.io/blogs/ffmpeg_operations/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/ffmpeg_operations/</guid>
-      <description>Simple Useful Features of FFmpeg   In this section we will go over a beautiful tool called as FFmpeg. I have been using FFmpeg for all of my video editing in server in production for more than 4 years now. It is a very reliable, amazing open source project for playing with video editing.
-Small Tip before we jump in
-Before we dive into these cheat sheet, remember that many of the FFmepg options are applicable to input and output files both.</description>
+      <description>Common FFmpeg video processing operations: trimming, merging, format conversion, resolution scaling, and extracting audio from video files.</description>
     </item>
-    
     <item>
       <title>Python code translator 2 to 3</title>
       <link>https://pranavgore09.github.io/blogs/2to3/</link>
       <pubDate>Wed, 27 May 2020 22:41:00 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
-      <description>Upgrade today!!   Let&amp;rsquo;s talk about Python 2to3 , an automated code translator. This is a great tool to convert your python2 project to python3.
- Why you should move to python 3.x? Checkout https://pythonclock.org/ (If that link is no more available, I have added the screenshot below)   Python 2 reached end of life (EOL) on January 1st, 2020   And python3 supports typing (:heart_eyes:) and a lot more (will cover it some other time).</description>
+      <description>How to use Python&amp;#39;s built-in 2to3 tool to automatically translate a Python 2 codebase to Python 3 syntax with minimal manual effort.</description>
     </item>
-    
     <item>
       <title>Record Screen and Audio using FFmpeg on macOS</title>
       <link>https://pranavgore09.github.io/blogs/ffmpeg_mac/</link>
       <pubDate>Tue, 12 May 2020 09:34:21 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/ffmpeg_mac/</guid>
-      <description>By the end of this blog you will be able to record your screen+audio on macOS.
-  2 beautiful Open Source softwares    Get started by installing FFmpeg with brew . Run following command
-brew install ffmpeg --with-sdl2 --with-ffplay (--with-ffplay is optional) Try running ffmpeg, you should see some output with version number on first line.
-ffmpeg version 4.2.2-tessus https://evermeet.cx/ffmpeg/ Copyright (c) 2000-2019 the FFmpeg developers built with Apple clang version 11.</description>
+      <description>Step-by-step guide to recording your screen and system audio on macOS using FFmpeg from the command line — no third-party software required.</description>
     </item>
-    
     <item>
       <title>X virtual framebuffer (Xvfb)</title>
       <link>https://pranavgore09.github.io/blogs/xvfb/</link>
       <pubDate>Wed, 22 Apr 2020 23:53:45 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/xvfb/</guid>
-      <description>Today, let&amp;rsquo;s talk about AWESOME X virtual frame buffer.
-  Virtual memory to render GUI    If you want to emulate the X server and want your UI apps to render over there then the answer is Xvfb . Xvfb uses frame buffer to emulate X server.
-Let&amp;rsquo;s install it first
-sudo apt update sudo apt install xvfb  Basic Usage:
-Xvfb :111 -screen 0 1920x1080x24 &amp;amp; echo $!</description>
+      <description>What Xvfb (X Virtual Framebuffer) is, how it works, and how to use it to run GUI applications in headless Linux environments for CI/CD pipelines and testing.</description>
     </item>
-    
     <item>
       <title>Exported but Restricted inside `internal` package.</title>
       <link>https://pranavgore09.github.io/blogs/golang_imported/</link>
       <pubDate>Wed, 28 Feb 2018 22:50:31 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/golang_imported/</guid>
-      <description>Information about internal package , _ and . imports in Golang!
-  If you come across any package named internal or you write a package with the name internal then it is treated special in Golang world! Only question to ask about it is, Who can import this internal package?
-And the answer is, any file out side the package containing internal package can NOT import internal because the name is self explanatory.</description>
+      <description>Understanding Go&amp;#39;s internal package mechanism — how exported symbols can be restricted to specific import paths, and when to use blank and dot imports.</description>
     </item>
-    
     <item>
       <title>Prevent accidental git-push in a simple step</title>
       <link>https://pranavgore09.github.io/blogs/gitpush/</link>
       <pubDate>Thu, 08 Feb 2018 14:45:26 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
-      <description>If you have push access to an upstream repository and want to avoid accidental push, checkout the simple solution below.
-  Freedom is choosing your responsibility. It’s not having no responsibilities; it’s choosing the ones you want.   Let’s set the context I will call the original repository as upstream My fork for that repository will be called as origin 90% of times I push to origin and then create pull request, but few times I push directly to upstream(create new branch or update existing one).</description>
+      <description>A one-line git configuration trick to prevent accidentally pushing to an upstream repository you don&amp;#39;t intend to touch.</description>
     </item>
-    
     <item>
       <title>Update golang version on Fedora</title>
       <link>https://pranavgore09.github.io/blogs/golang_update/</link>
       <pubDate>Mon, 16 Oct 2017 22:40:33 +0530</pubDate>
-      
       <guid>https://pranavgore09.github.io/blogs/golang_update/</guid>
-      <description>Find out where Golang is installed, generally on the fedora it is /usr/local/go Or if you have custom location then check with echo $GOROOT and go to the location and rename go directory using sudo mv go go1.7.3. We keep older version for safety.
-Now, go to https://golang.org/dl/ and download suitable version for your system. Lets say downloaded file is in ~/Downloads/ and then execute following (modify paths as required)</description>
+      <description>How to safely update your Go installation on Fedora Linux while keeping the old version as a fallback.</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://pranavgore09.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pranavgore09.github.io/about/</guid>
-      <description>Python, Django+DRF, Javascript, Redis, PostgreSQL, FFMpeg, Video processing (FFmpeg), HLS, AWS, IaC (Terraform and cloudformation), CI/CD (Github Actions and Jenkins). Hands on experince with all mentioned 😊.
-Resume More than just a software developer.
-Learn, Understand, Brainstorm, Train, Develop, Maintain, Run10k, Repeat.
-I have used above pattern in my 10 years of software journey and it helped me extraordinarily.
-I have hands-on experience of software products going down and up. I have worked in start ups with less than 10 head count and enjoyed building real world and easy to use products.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://pranavgore09.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pranavgore09.github.io/contact/</guid>
-      <description>Please write to me at pranavgore09@gmail.com .
-Resume </description>
-    </item>
-    
     <item>
       <title></title>
       <link>https://pranavgore09.github.io/thinktank/think/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://pranavgore09.github.io/thinktank/think/</guid>
-      <description>write down whatever you think for this profile builder
-List of blogs to be written
- Pulseaudio and virtual devices  DONT ADD THIS 4. Xvfb Pulseaudio with FFmpeg to record audio and screen. Selenium simple sweet basic round of test (Join your next googlemeet with automation)  BOARD GAMEs My Guide/Theory Buying Board Games. digital edition, steam, online board gaming Thoughts on Scythe Thoughts on Stone-Age and worker placement games Thoughts on Ticket To Ride Thoughts on Instanbul the board game  Blog structure</description>
+      <description>&lt;p&gt;write down whatever you think for this profile builder&lt;/p&gt;
+&lt;p&gt;List of blogs to be written&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pulseaudio and virtual devices&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;dont-add-this-4-xvfb-pulseaudio-with-ffmpeg-to-record-audio-and-screen&#34;&gt;DONT ADD THIS 4. Xvfb Pulseaudio with FFmpeg to record audio and screen.&lt;/h5&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Selenium simple sweet basic round of test (Join your next googlemeet with automation)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;board-games&#34;&gt;BOARD GAMEs&lt;/h4&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;My Guide/Theory Buying Board Games. digital edition, steam, online board gaming&lt;/li&gt;
+&lt;li&gt;Thoughts on Scythe&lt;/li&gt;
+&lt;li&gt;Thoughts on Stone-Age and worker placement games&lt;/li&gt;
+&lt;li&gt;Thoughts on Ticket To Ride&lt;/li&gt;
+&lt;li&gt;Thoughts on Instanbul the board game&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Blog structure&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>About</title>
+      <link>https://pranavgore09.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pranavgore09.github.io/about/</guid>
+      <description>Pranav Gore — backend software engineer with 12&#43; years building production systems at Avoma and Privyr. Python, Django, AWS, PostgreSQL, Redis, FFmpeg.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://pranavgore09.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pranavgore09.github.io/contact/</guid>
+      <description>Get in touch with Pranav Gore — software engineer. Email, resume, and social profiles.</description>
+    </item>
   </channel>
 </rss>

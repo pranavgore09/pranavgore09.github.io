@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Migration on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/migration/</link>
+    <description>Recent content in Migration on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 May 2020 22:41:00 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/migration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python code translator 2 to 3</title>
+      <link>https://pranavgore09.github.io/blogs/2to3/</link>
+      <pubDate>Wed, 27 May 2020 22:41:00 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/2to3/</guid>
+      <description>How to use Python&amp;#39;s built-in 2to3 tool to automatically translate a Python 2 codebase to Python 3 syntax with minimal manual effort.</description>
+    </item>
+  </channel>
+</rss>

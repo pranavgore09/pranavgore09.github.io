@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Screen-Recording on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/screen-recording/</link>
+    <description>Recent content in Screen-Recording on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 May 2020 09:34:21 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/screen-recording/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Record Screen and Audio using FFmpeg on macOS</title>
+      <link>https://pranavgore09.github.io/blogs/ffmpeg_mac/</link>
+      <pubDate>Tue, 12 May 2020 09:34:21 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/ffmpeg_mac/</guid>
+      <description>Step-by-step guide to recording your screen and system audio on macOS using FFmpeg from the command line — no third-party software required.</description>
+    </item>
+  </channel>
+</rss>

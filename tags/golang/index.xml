@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Golang on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/golang/</link>
+    <description>Recent content in Golang on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Feb 2018 22:50:31 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exported but Restricted inside `internal` package.</title>
+      <link>https://pranavgore09.github.io/blogs/golang_imported/</link>
+      <pubDate>Wed, 28 Feb 2018 22:50:31 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/golang_imported/</guid>
+      <description>Understanding Go&amp;#39;s internal package mechanism — how exported symbols can be restricted to specific import paths, and when to use blank and dot imports.</description>
+    </item>
+    <item>
+      <title>Update golang version on Fedora</title>
+      <link>https://pranavgore09.github.io/blogs/golang_update/</link>
+      <pubDate>Mon, 16 Oct 2017 22:40:33 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/golang_update/</guid>
+      <description>How to safely update your Go installation on Fedora Linux while keeping the old version as a fallback.</description>
+    </item>
+  </channel>
+</rss>

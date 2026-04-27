@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automation on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/automation/</link>
+    <description>Recent content in Automation on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 May 2022 06:26:33 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When &amp; why to use PyAutoGUI</title>
+      <link>https://pranavgore09.github.io/blogs/pyautogui/</link>
+      <pubDate>Mon, 02 May 2022 06:26:33 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/pyautogui/</guid>
+      <description>When PyAutoGUI is the right tool for desktop GUI automation and testing — practical use cases, limitations, and a getting-started walkthrough.</description>
+    </item>
+  </channel>
+</rss>

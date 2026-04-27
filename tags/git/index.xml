@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on Pranav Gore</title>
+    <link>https://pranavgore09.github.io/tags/git/</link>
+    <description>Recent content in Git on Pranav Gore</description>
+    <image>
+      <title>Pranav Gore</title>
+      <url>https://pranavgore09.github.io/img/profile4_small.png</url>
+      <link>https://pranavgore09.github.io/img/profile4_small.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Feb 2018 14:45:26 +0530</lastBuildDate>
+    <atom:link href="https://pranavgore09.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prevent accidental git-push in a simple step</title>
+      <link>https://pranavgore09.github.io/blogs/gitpush/</link>
+      <pubDate>Thu, 08 Feb 2018 14:45:26 +0530</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/gitpush/</guid>
+      <description>A one-line git configuration trick to prevent accidentally pushing to an upstream repository you don&amp;#39;t intend to touch.</description>
+    </item>
+  </channel>
+</rss>
