@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Sep 2025 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 19:37:39 +0800</lastBuildDate>
     <atom:link href="https://pranavgore09.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diagnosing PostgreSQL Connection Leaks on RDS</title>
+      <link>https://pranavgore09.github.io/blogs/rds-connection-leak/</link>
+      <pubDate>Mon, 16 Mar 2026 19:37:39 +0800</pubDate>
+      <guid>https://pranavgore09.github.io/blogs/rds-connection-leak/</guid>
+      <description>How a Gunicorn and PostgreSQL statement_timeout mismatch caused orphaned RDS connections, 502 errors under load, and how to find and fix it using pg_stat_activity.</description>
+    </item>
     <item>
       <title>Under Fire: What a Real DDoS Attack Looks Like and How We Fought Back</title>
       <link>https://pranavgore09.github.io/blogs/ddos-at-privyr/</link>

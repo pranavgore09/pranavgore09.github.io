@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Aws on Pranav Gore | Senior Backend Engineer</title>
-    <link>https://pranavgore09.github.io/tags/aws/</link>
-    <description>Recent content in Aws on Pranav Gore | Senior Backend Engineer</description>
+    <title>Backend on Pranav Gore | Senior Backend Engineer</title>
+    <link>https://pranavgore09.github.io/tags/backend/</link>
+    <description>Recent content in Backend on Pranav Gore | Senior Backend Engineer</description>
     <image>
       <title>Pranav Gore | Senior Backend Engineer</title>
       <url>https://pranavgore09.github.io/img/og_v1.jpg</url>
@@ -12,20 +12,13 @@
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 16 Mar 2026 19:37:39 +0800</lastBuildDate>
-    <atom:link href="https://pranavgore09.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pranavgore09.github.io/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diagnosing PostgreSQL Connection Leaks on RDS</title>
       <link>https://pranavgore09.github.io/blogs/rds-connection-leak/</link>
       <pubDate>Mon, 16 Mar 2026 19:37:39 +0800</pubDate>
       <guid>https://pranavgore09.github.io/blogs/rds-connection-leak/</guid>
       <description>How a Gunicorn and PostgreSQL statement_timeout mismatch caused orphaned RDS connections, 502 errors under load, and how to find and fix it using pg_stat_activity.</description>
-    </item>
-    <item>
-      <title>Under Fire: What a Real DDoS Attack Looks Like and How We Fought Back</title>
-      <link>https://pranavgore09.github.io/blogs/ddos-at-privyr/</link>
-      <pubDate>Fri, 12 Sep 2025 10:00:00 +0800</pubDate>
-      <guid>https://pranavgore09.github.io/blogs/ddos-at-privyr/</guid>
-      <description>What a real DDoS attack looks like up close, how we responded in real time at Privyr, the tools that helped us survive 30 hours of it, and the product change we shipped right after.</description>
     </item>
   </channel>
 </rss>
